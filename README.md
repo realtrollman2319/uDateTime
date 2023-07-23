@@ -50,6 +50,31 @@ DateTimeOffset [Class]:
     +totalSeconds                                    [get]      : double
     +totalMilliseconds                               [get]      : double
 
-DateTimeOffset [Class]:
+TimeSpan [Class]:
     Constructor: DateTimeOffset(double ticks)
+    Constructor: DateTimeOffset(int32 hours, int32 minutes, int32 seconds)
+    Constructor: DateTimeOffset(int32 days, int32 hours, int32 minutes, int32 seconds)
+    Constructor: DateTimeOffset(int32 days, int32 hours, int32 minutes, int32 seconds, int32 milliseconds)
+    +subtract(TimeSpan timeSpan)                [get]      : TimeSpan
+    +toString(string format)                    [get]      : string
+    +toString()                                 [get]      : string
+    +ticksPerMillisecond                        [get]      : double
+    +ticksPerSecond                             [get]      : double
+    +ticksPerMinute                             [get]      : double
+    +ticksPerHour                               [get]      : double
+    +ticksPerDay                                [get]      : double
+    +totalDays                                  [get]      : double
+    +totalHours                                 [get]      : double
+    +totalMinutes                               [get]      : double
+    +totalSeconds                               [get]      : double
+    +totalMilliseconds                          [get]      : double
+    +days                                       [get]      : int32
+    +hours                                      [get]      : int32
+    +minutes                                    [get]      : int32
+    +seconds                                    [get]      : int32
+    +milliseconds                               [get]      : int32
+    +ticks                                      [get]      : double
+    +zero                                       [get]      : TimeSpan
+    +minValue                                   [get]      : TimeSpan
+    +maxValue                                   [get]      : TimeSpan
 ```
